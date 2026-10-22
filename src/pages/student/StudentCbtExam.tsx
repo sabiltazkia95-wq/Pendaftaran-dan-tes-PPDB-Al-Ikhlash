@@ -38,47 +38,18 @@ export const StudentCbtExam: React.FC<StudentCbtExamProps> = ({ examId, navigate
   const [initError, setInitError] = useState<string | null>(null);
 
   const timerRef = useRef<any>(null);
-  const pendingSyncRef = useRef<Set<string>>(new Set());
 
-  // Online status listener with automatic resync
+  // Online status listener
   useEffect(() => {
-    const handleOnline = async () => {
-      setIsOnline(true);
-      // Auto flush pending unsaved queue when reconnecting
-      if (attemptId && pendingSyncRef.current.size > 0) {
-        setSaveStatus('saving');
-        try {
-          const qIds = Array.from(pendingSyncRef.current);
-          for (const qId of qIds) {
-            const ans = answers[qId];
-            if (ans) {
-              await api.saveExamAnswer({
-                attempt_id: attemptId,
-                question_id: qId,
-                selected_option_id: ans.selected_option_id,
-                essay_answer: ans.essay_answer,
-                marked_for_review: ans.marked_for_review
-              });
-              pendingSyncRef.current.delete(qId);
-            }
-          }
-          setSaveStatus('saved');
-        } catch (err) {
-          console.error('Failed to sync offline queue on reconnect:', err);
-          setSaveStatus('error');
-        }
-      }
-    };
-    const handleOffline = () => {
-      setIsOnline(false);
-    };
+    const handleOnline = () => setIsOnline(true);
+    const handleOffline = () => setIsOnline(false);
     window.addEventListener('online', handleOnline);
     window.addEventListener('offline', handleOffline);
     return () => {
       window.removeEventListener('online', handleOnline);
       window.removeEventListener('offline', handleOffline);
     };
-  }, [attemptId, answers]);
+  }, []);
 
   // Initialize Exam Session
   useEffect(() => {
@@ -145,7 +116,7 @@ export const StudentCbtExam: React.FC<StudentCbtExamProps> = ({ examId, navigate
     return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
   };
 
-  // Save answer to server with offline retry tracking
+  // Save answer to server
   const saveAnswerToServer = async (
     qId: string,
     optId: string | null = null,
@@ -162,11 +133,9 @@ export const StudentCbtExam: React.FC<StudentCbtExamProps> = ({ examId, navigate
         essay_answer: essay,
         marked_for_review: review
       });
-      pendingSyncRef.current.delete(qId);
       setSaveStatus('saved');
     } catch (err) {
-      console.error('Failed to save answer (marked for offline queue):', err);
-      pendingSyncRef.current.add(qId);
+      console.error('Failed to save answer:', err);
       setSaveStatus('error');
     }
   };
@@ -336,17 +305,6 @@ export const StudentCbtExam: React.FC<StudentCbtExamProps> = ({ examId, navigate
 
   return (
     <div className="max-w-6xl mx-auto space-y-4">
-      {/* Offline Resilience Banner */}
-      {!isOnline && (
-        <div className="bg-amber-50 border border-amber-300 p-3.5 rounded-2xl flex items-center gap-3 text-xs text-amber-900 shadow-xs">
-          <WifiOff className="w-5 h-5 text-amber-600 shrink-0" />
-          <div className="flex-1">
-            <span className="font-bold">Koneksi Internet Terputus: </span>
-            Lembar ujian tetap aktif dan seluruh pilihan jawaban Anda tersimpan aman secara lokal di peramban ini. Sistem akan otomatis menyinkronkan data ke server panitia saat koneksi internet kembali pulih.
-          </div>
-        </div>
-      )}
-
       {/* CBT Header Bar */}
       <div className="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200 shadow-xs flex flex-wrap items-center justify-between gap-4">
         <div>
@@ -617,13 +575,6 @@ export const StudentCbtExam: React.FC<StudentCbtExamProps> = ({ examId, navigate
               </div>
             </div>
 
-            {!isOnline && (
-              <div className="p-3 bg-amber-50 border border-amber-300 rounded-xl text-amber-900 text-xs flex items-center gap-2">
-                <WifiOff className="w-4 h-4 text-amber-600 shrink-0" />
-                <span>Koneksi internet terputus. Harap tunggu hingga online kembali sebelum mengumpulkan ujian agar seluruh jawaban terkirim ke server panitia.</span>
-              </div>
-            )}
-
             <p className="text-[11px] text-slate-500 text-center leading-relaxed">
               Setelah dikumpulkan, sesi ujian akan diselesaikan secara permanen dan jawaban tidak dapat diubah kembali.
             </p>
@@ -638,11 +589,11 @@ export const StudentCbtExam: React.FC<StudentCbtExamProps> = ({ examId, navigate
               </button>
               <button
                 type="button"
-                disabled={isSubmitting || !isOnline}
+                disabled={isSubmitting}
                 onClick={handleFinalSubmit}
                 className="px-5 py-2 text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 rounded-xl shadow-xs transition-colors disabled:opacity-50"
               >
-                {isSubmitting ? 'Mengumpulkan...' : !isOnline ? 'Menunggu Koneksi...' : 'Ya, Kumpulkan Sekarang'}
+                {isSubmitting ? 'Mengumpulkan...' : 'Ya, Kumpulkan Sekarang'}
               </button>
             </div>
           </div>
