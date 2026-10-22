@@ -25,6 +25,7 @@ export const AdminSecurityTests: React.FC = () => {
 
   const categories = [
     { key: 'all', label: 'Semua Uji Keamanan' },
+    { key: 'CBT_LIFECYCLE', label: 'Siklus Ujian CBT' },
     { key: 'REGISTRATION', label: 'Registrasi & Role' },
     { key: 'RLS_DATA', label: 'Isolasi RLS Data' },
     { key: 'RBAC_ACCESS', label: 'Wewenang RBAC' },

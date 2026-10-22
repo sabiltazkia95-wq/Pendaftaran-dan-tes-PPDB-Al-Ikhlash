@@ -297,23 +297,21 @@ export function registerStudentRoutes(app: any) {
       const student = getStudentProfile(req.user!.id);
       if (!student) return res.status(404).json({ error: 'Data santri tidak ditemukan.' });
 
-      const registration = db.get('registrations').find(r => r.student_id === student.id);
-      if (!['terverifikasi', 'siap_ujian', 'sedang_ujian'].includes(registration?.status || '')) {
-        return res.status(403).json({ error: 'Pendaftaran Anda belum terverifikasi oleh panitia untuk mengikuti ujian CBT.' });
-      }
-
       const exam = db.get('exams').find(e => e.id === req.params.id && e.status === 'aktif');
       if (!exam) {
         return res.status(404).json({ error: 'Ujian tidak aktif atau tidak ditemukan.' });
       }
 
-      // Check existing attempts
+      // Check existing attempts: if already completed, reject with 400 Bad Request
       const attempts = db.get('exam_attempts').filter(a => a.student_id === student.id && a.exam_id === exam.id);
-
-      // Check if already completed
       const completed = attempts.find(a => a.status === 'submitted' || a.status === 'timed_out');
       if (completed) {
         return res.status(400).json({ error: 'Anda telah menyelesaikan ujian ini. Pengulangan ujian tidak diizinkan.' });
+      }
+
+      const registration = db.get('registrations').find(r => r.student_id === student.id);
+      if (!['terverifikasi', 'siap_ujian', 'sedang_ujian'].includes(registration?.status || '')) {
+        return res.status(403).json({ error: 'Pendaftaran Anda belum terverifikasi oleh panitia untuk mengikuti ujian CBT.' });
       }
 
       const now = new Date();
@@ -330,35 +328,41 @@ export function registerStudentRoutes(app: any) {
           return res.status(400).json({ error: 'Waktu ujian telah berakhir.' });
         }
       } else {
-        // Create new session
-        const durationMs = exam.duration_minutes * 60 * 1000;
-        const deadline = new Date(now.getTime() + durationMs);
+        // Double-check race condition in db
+        const raceCheck = db.get('exam_attempts').find(a => a.student_id === student.id && a.exam_id === exam.id && a.status === 'in_progress');
+        if (raceCheck) {
+          active = raceCheck;
+        } else {
+          // Create new session
+          const durationMs = exam.duration_minutes * 60 * 1000;
+          const deadline = new Date(now.getTime() + durationMs);
 
-        active = {
-          id: 'att_' + crypto.randomUUID(),
-          exam_id: exam.id,
-          student_id: student.id,
-          attempt_number: attempts.length + 1,
-          started_at: now.toISOString(),
-          deadline_at: deadline.toISOString(),
-          submitted_at: null,
-          status: 'in_progress',
-          objective_score: null,
-          essay_score: null,
-          final_score: null,
-          created_at: now.toISOString()
-        };
+          active = {
+            id: 'att_' + crypto.randomUUID(),
+            exam_id: exam.id,
+            student_id: student.id,
+            attempt_number: attempts.length + 1,
+            started_at: now.toISOString(),
+            deadline_at: deadline.toISOString(),
+            submitted_at: null,
+            status: 'in_progress',
+            objective_score: null,
+            essay_score: null,
+            final_score: null,
+            created_at: now.toISOString()
+          };
 
-        db.get('exam_attempts').push(active);
-        if (registration) {
-          registration.status = 'sedang_ujian';
+          db.get('exam_attempts').push(active);
+          if (registration) {
+            registration.status = 'sedang_ujian';
+          }
+          db.save();
+
+          db.logAudit(req.user!.id, 'START_EXAM', 'EXAM_ATTEMPT', active.id, {
+            exam_id: exam.id,
+            reg_number: student.registration_number
+          }, req.user!.full_name);
         }
-        db.save();
-
-        db.logAudit(req.user!.id, 'START_EXAM', 'EXAM_ATTEMPT', active.id, {
-          exam_id: exam.id,
-          reg_number: student.registration_number
-        }, req.user!.full_name);
       }
 
       const remainingSeconds = Math.max(0, Math.floor((new Date(active.deadline_at).getTime() - Date.now()) / 1000));
@@ -512,7 +516,7 @@ export function registerStudentRoutes(app: any) {
         return res.status(404).json({ error: 'Sesi ujian tidak ditemukan.' });
       }
 
-      if (attempt.status !== 'in_progress') {
+      if (attempt.status !== 'in_progress' && attempt.status !== 'timed_out') {
         return res.status(400).json({ error: 'Ujian ini sudah pernah dikumpulkan sebelumnya.' });
       }
 

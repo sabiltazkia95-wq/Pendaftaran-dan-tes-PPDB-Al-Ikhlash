@@ -39,6 +39,66 @@
       "password_hash": "51150426272f070761f336db5ee547b3496d0646b1a8441b0d08c0b8be98a2c6",
       "created_at": "2026-10-22T02:01:42.778Z",
       "updated_at": "2026-10-22T02:01:42.778Z"
+    },
+    {
+      "id": "u_664eae01-e5b0-4898-a19f-cd01860a234a",
+      "full_name": "Santri B (Test Persona)",
+      "email": "santri_b_1792635033532@test.com",
+      "phone": "089912345678",
+      "role": "student",
+      "password_hash": "51150426272f070761f336db5ee547b3496d0646b1a8441b0d08c0b8be98a2c6",
+      "created_at": "2026-10-22T02:10:33.535Z",
+      "updated_at": "2026-10-22T02:10:33.535Z"
+    },
+    {
+      "id": "u_855ebaf0-5822-4ef8-bd8c-5e125cfa292d",
+      "full_name": "Calon Santri Pilot CBT",
+      "email": "cbt_pilot_1792635033602@test.com",
+      "phone": "081299998888",
+      "role": "student",
+      "password_hash": "51150426272f070761f336db5ee547b3496d0646b1a8441b0d08c0b8be98a2c6",
+      "created_at": "2026-10-22T02:10:33.604Z",
+      "updated_at": "2026-10-22T02:10:33.604Z"
+    },
+    {
+      "id": "u_e5b88f3d-e0ca-4f55-9314-2546c55f6cfd",
+      "full_name": "Santri B (Test Persona)",
+      "email": "santri_b_1792635063760@test.com",
+      "phone": "089912345678",
+      "role": "student",
+      "password_hash": "51150426272f070761f336db5ee547b3496d0646b1a8441b0d08c0b8be98a2c6",
+      "created_at": "2026-10-22T02:11:03.762Z",
+      "updated_at": "2026-10-22T02:11:03.762Z"
+    },
+    {
+      "id": "u_900b4b9e-6754-4c78-a5ac-52ae6600b131",
+      "full_name": "Calon Santri Pilot CBT",
+      "email": "cbt_pilot_1792635063819@test.com",
+      "phone": "081299998888",
+      "role": "student",
+      "password_hash": "51150426272f070761f336db5ee547b3496d0646b1a8441b0d08c0b8be98a2c6",
+      "created_at": "2026-10-22T02:11:03.822Z",
+      "updated_at": "2026-10-22T02:11:03.822Z"
+    },
+    {
+      "id": "u_da2853cd-807f-46b9-8f98-9c655e82b858",
+      "full_name": "Santri B (Test Persona)",
+      "email": "santri_b_1792635110266@test.com",
+      "phone": "089912345678",
+      "role": "student",
+      "password_hash": "51150426272f070761f336db5ee547b3496d0646b1a8441b0d08c0b8be98a2c6",
+      "created_at": "2026-10-22T02:11:50.270Z",
+      "updated_at": "2026-10-22T02:11:50.270Z"
+    },
+    {
+      "id": "u_2522a6f3-7e7e-4c0e-bfcb-0d8c98162c26",
+      "full_name": "Calon Santri Pilot CBT",
+      "email": "cbt_pilot_1792635110328@test.com",
+      "phone": "081299998888",
+      "role": "student",
+      "password_hash": "51150426272f070761f336db5ee547b3496d0646b1a8441b0d08c0b8be98a2c6",
+      "created_at": "2026-10-22T02:11:50.330Z",
+      "updated_at": "2026-10-22T02:11:50.330Z"
     }
   ],
   "student_profiles": [
@@ -73,6 +133,102 @@
       "parent_phone": "089912345678",
       "created_at": "2026-10-22T02:01:42.778Z",
       "updated_at": "2026-10-22T02:01:42.791Z"
+    },
+    {
+      "id": "sp_5c75e79b-3389-4f4e-8592-4e73b7a1b53d",
+      "user_id": "u_664eae01-e5b0-4898-a19f-cd01860a234a",
+      "registration_number": "PPDB-2027-0003",
+      "birth_place": "",
+      "birth_date": "",
+      "gender": "L",
+      "nik": "",
+      "address": "Hacked Address",
+      "school_origin": "",
+      "education_level": "SMP",
+      "parent_name": "",
+      "parent_phone": "089912345678",
+      "created_at": "2026-10-22T02:10:33.535Z",
+      "updated_at": "2026-10-22T02:10:33.547Z"
+    },
+    {
+      "id": "sp_d19ca261-0f17-4ab7-b139-0172a4378902",
+      "user_id": "u_855ebaf0-5822-4ef8-bd8c-5e125cfa292d",
+      "registration_number": "PPDB-2027-0004",
+      "birth_place": "",
+      "birth_date": "",
+      "gender": "L",
+      "nik": "",
+      "address": "",
+      "school_origin": "",
+      "education_level": "SMP",
+      "parent_name": "",
+      "parent_phone": "081299998888",
+      "created_at": "2026-10-22T02:10:33.604Z",
+      "updated_at": "2026-10-22T02:10:33.604Z"
+    },
+    {
+      "id": "sp_86b00f16-dae8-4690-b82d-5fe1372b9b39",
+      "user_id": "u_e5b88f3d-e0ca-4f55-9314-2546c55f6cfd",
+      "registration_number": "PPDB-2027-0005",
+      "birth_place": "",
+      "birth_date": "",
+      "gender": "L",
+      "nik": "",
+      "address": "Hacked Address",
+      "school_origin": "",
+      "education_level": "SMP",
+      "parent_name": "",
+      "parent_phone": "089912345678",
+      "created_at": "2026-10-22T02:11:03.762Z",
+      "updated_at": "2026-10-22T02:11:03.773Z"
+    },
+    {
+      "id": "sp_71b7f20c-e361-4d41-86a6-2a082d1f1939",
+      "user_id": "u_900b4b9e-6754-4c78-a5ac-52ae6600b131",
+      "registration_number": "PPDB-2027-0006",
+      "birth_place": "",
+      "birth_date": "",
+      "gender": "L",
+      "nik": "",
+      "address": "",
+      "school_origin": "",
+      "education_level": "SMP",
+      "parent_name": "",
+      "parent_phone": "081299998888",
+      "created_at": "2026-10-22T02:11:03.822Z",
+      "updated_at": "2026-10-22T02:11:03.822Z"
+    },
+    {
+      "id": "sp_a5bb5fd9-3248-4425-b0cc-b766d70a1f28",
+      "user_id": "u_da2853cd-807f-46b9-8f98-9c655e82b858",
+      "registration_number": "PPDB-2027-0007",
+      "birth_place": "",
+      "birth_date": "",
+      "gender": "L",
+      "nik": "",
+      "address": "Hacked Address",
+      "school_origin": "",
+      "education_level": "SMP",
+      "parent_name": "",
+      "parent_phone": "089912345678",
+      "created_at": "2026-10-22T02:11:50.270Z",
+      "updated_at": "2026-10-22T02:11:50.283Z"
+    },
+    {
+      "id": "sp_e1379514-7cbd-4af2-9c32-ce112279bf8d",
+      "user_id": "u_2522a6f3-7e7e-4c0e-bfcb-0d8c98162c26",
+      "registration_number": "PPDB-2027-0008",
+      "birth_place": "",
+      "birth_date": "",
+      "gender": "L",
+      "nik": "",
+      "address": "",
+      "school_origin": "",
+      "education_level": "SMP",
+      "parent_name": "",
+      "parent_phone": "081299998888",
+      "created_at": "2026-10-22T02:11:50.330Z",
+      "updated_at": "2026-10-22T02:11:50.330Z"
     }
   ],
   "registrations": [
@@ -97,6 +253,72 @@
       "verified_at": null,
       "review_notes": null,
       "created_at": "2026-10-22T02:01:42.778Z"
+    },
+    {
+      "id": "reg_e7f92ed8-c521-45cd-a733-c5702637409d",
+      "student_id": "sp_5c75e79b-3389-4f4e-8592-4e73b7a1b53d",
+      "academic_year": "2027/2028",
+      "status": "draft",
+      "submitted_at": null,
+      "verified_by": null,
+      "verified_at": null,
+      "review_notes": null,
+      "created_at": "2026-10-22T02:10:33.535Z"
+    },
+    {
+      "id": "reg_b0419dcf-4f28-4fc6-9a01-0b797e45d9b6",
+      "student_id": "sp_d19ca261-0f17-4ab7-b139-0172a4378902",
+      "academic_year": "2027/2028",
+      "status": "ujian_selesai",
+      "submitted_at": null,
+      "verified_by": null,
+      "verified_at": null,
+      "review_notes": null,
+      "created_at": "2026-10-22T02:10:33.604Z"
+    },
+    {
+      "id": "reg_e52f0d3e-5507-4116-b619-cf1650607a94",
+      "student_id": "sp_86b00f16-dae8-4690-b82d-5fe1372b9b39",
+      "academic_year": "2027/2028",
+      "status": "draft",
+      "submitted_at": null,
+      "verified_by": null,
+      "verified_at": null,
+      "review_notes": null,
+      "created_at": "2026-10-22T02:11:03.762Z"
+    },
+    {
+      "id": "reg_05ed5cc6-040f-4863-a297-88b888518f07",
+      "student_id": "sp_71b7f20c-e361-4d41-86a6-2a082d1f1939",
+      "academic_year": "2027/2028",
+      "status": "ujian_selesai",
+      "submitted_at": null,
+      "verified_by": null,
+      "verified_at": null,
+      "review_notes": null,
+      "created_at": "2026-10-22T02:11:03.822Z"
+    },
+    {
+      "id": "reg_6f4a11d7-b569-445e-9bb3-f4eed0d74c93",
+      "student_id": "sp_a5bb5fd9-3248-4425-b0cc-b766d70a1f28",
+      "academic_year": "2027/2028",
+      "status": "draft",
+      "submitted_at": null,
+      "verified_by": null,
+      "verified_at": null,
+      "review_notes": null,
+      "created_at": "2026-10-22T02:11:50.270Z"
+    },
+    {
+      "id": "reg_c62a40a6-f459-4e18-ac03-67d2e3147205",
+      "student_id": "sp_e1379514-7cbd-4af2-9c32-ce112279bf8d",
+      "academic_year": "2027/2028",
+      "status": "ujian_selesai",
+      "submitted_at": null,
+      "verified_by": null,
+      "verified_at": null,
+      "review_notes": null,
+      "created_at": "2026-10-22T02:11:50.330Z"
     }
   ],
   "documents": [
@@ -675,12 +897,231 @@
       "student_id": "sp_fe254d4d-0c4e-41d4-b39a-b55b7f614777",
       "status": "assigned",
       "created_at": "2026-10-22T02:01:42.778Z"
+    },
+    {
+      "id": "asg_fe827138-a545-49b7-80f1-5d3d552bdc86",
+      "exam_id": "exam_cbt_001",
+      "student_id": "sp_5c75e79b-3389-4f4e-8592-4e73b7a1b53d",
+      "status": "assigned",
+      "created_at": "2026-10-22T02:10:33.535Z"
+    },
+    {
+      "id": "asg_ee1817ba-7d33-4a4e-956d-a7e148dac448",
+      "exam_id": "exam_cbt_001",
+      "student_id": "sp_d19ca261-0f17-4ab7-b139-0172a4378902",
+      "status": "assigned",
+      "created_at": "2026-10-22T02:10:33.604Z"
+    },
+    {
+      "id": "asg_31faf6dc-2e1a-4339-aadf-b755f2123e37",
+      "exam_id": "exam_cbt_001",
+      "student_id": "sp_86b00f16-dae8-4690-b82d-5fe1372b9b39",
+      "status": "assigned",
+      "created_at": "2026-10-22T02:11:03.762Z"
+    },
+    {
+      "id": "asg_ae864bdc-289c-415e-b66d-655033aa5719",
+      "exam_id": "exam_cbt_001",
+      "student_id": "sp_71b7f20c-e361-4d41-86a6-2a082d1f1939",
+      "status": "assigned",
+      "created_at": "2026-10-22T02:11:03.822Z"
+    },
+    {
+      "id": "asg_86f0d11c-b64c-4cbe-adf1-97222a9a6841",
+      "exam_id": "exam_cbt_001",
+      "student_id": "sp_a5bb5fd9-3248-4425-b0cc-b766d70a1f28",
+      "status": "assigned",
+      "created_at": "2026-10-22T02:11:50.270Z"
+    },
+    {
+      "id": "asg_67edf408-0701-40b3-9973-fc22036c8402",
+      "exam_id": "exam_cbt_001",
+      "student_id": "sp_e1379514-7cbd-4af2-9c32-ce112279bf8d",
+      "status": "assigned",
+      "created_at": "2026-10-22T02:11:50.330Z"
     }
   ],
-  "exam_attempts": [],
-  "student_answers": [],
+  "exam_attempts": [
+    {
+      "id": "att_cdf5ebc6-722c-4a46-9931-47019d77b884",
+      "exam_id": "exam_cbt_001",
+      "student_id": "sp_d19ca261-0f17-4ab7-b139-0172a4378902",
+      "attempt_number": 1,
+      "started_at": "2026-10-22T02:10:33.608Z",
+      "deadline_at": "2026-10-22T03:10:33.608Z",
+      "submitted_at": "2026-10-22T02:10:33.660Z",
+      "status": "submitted",
+      "objective_score": 0,
+      "essay_score": null,
+      "final_score": null,
+      "created_at": "2026-10-22T02:10:33.608Z"
+    },
+    {
+      "id": "att_expired_test_1792635033654",
+      "exam_id": "exam_cbt_001",
+      "student_id": "sp_d19ca261-0f17-4ab7-b139-0172a4378902",
+      "attempt_number": 99,
+      "started_at": "2026-10-22T00:10:33.654Z",
+      "deadline_at": "2026-10-22T01:10:33.654Z",
+      "submitted_at": "2026-10-22T01:10:33.654Z",
+      "status": "timed_out",
+      "objective_score": null,
+      "essay_score": null,
+      "final_score": null,
+      "created_at": "2026-10-22T00:10:33.654Z"
+    },
+    {
+      "id": "att_374fd7a8-efef-4d33-9d49-547911a840a4",
+      "exam_id": "exam_cbt_001",
+      "student_id": "sp_71b7f20c-e361-4d41-86a6-2a082d1f1939",
+      "attempt_number": 1,
+      "started_at": "2026-10-22T02:11:03.827Z",
+      "deadline_at": "2026-10-22T03:11:03.827Z",
+      "submitted_at": "2026-10-22T02:11:03.925Z",
+      "status": "submitted",
+      "objective_score": 0,
+      "essay_score": null,
+      "final_score": null,
+      "created_at": "2026-10-22T02:11:03.827Z"
+    },
+    {
+      "id": "att_expired_test_1792635063898",
+      "exam_id": "exam_cbt_001",
+      "student_id": "sp_71b7f20c-e361-4d41-86a6-2a082d1f1939",
+      "attempt_number": 99,
+      "started_at": "2026-10-22T00:11:03.898Z",
+      "deadline_at": "2026-10-22T01:11:03.898Z",
+      "submitted_at": "2026-10-22T01:11:03.898Z",
+      "status": "timed_out",
+      "objective_score": null,
+      "essay_score": null,
+      "final_score": null,
+      "created_at": "2026-10-22T00:11:03.898Z"
+    },
+    {
+      "id": "att_2c650f76-4406-4143-a80e-1a34c2dfeb73",
+      "exam_id": "exam_cbt_001",
+      "student_id": "sp_e1379514-7cbd-4af2-9c32-ce112279bf8d",
+      "attempt_number": 1,
+      "started_at": "2026-10-22T02:11:50.334Z",
+      "deadline_at": "2026-10-22T03:11:50.334Z",
+      "submitted_at": "2026-10-22T02:11:50.376Z",
+      "status": "submitted",
+      "objective_score": 0,
+      "essay_score": null,
+      "final_score": null,
+      "created_at": "2026-10-22T02:11:50.334Z"
+    },
+    {
+      "id": "att_expired_test_1792635110370",
+      "exam_id": "exam_cbt_001",
+      "student_id": "sp_e1379514-7cbd-4af2-9c32-ce112279bf8d",
+      "attempt_number": 99,
+      "started_at": "2026-10-22T00:11:50.370Z",
+      "deadline_at": "2026-10-22T01:11:50.370Z",
+      "submitted_at": "2026-10-22T01:11:50.370Z",
+      "status": "timed_out",
+      "objective_score": null,
+      "essay_score": null,
+      "final_score": null,
+      "created_at": "2026-10-22T00:11:50.370Z"
+    }
+  ],
+  "student_answers": [
+    {
+      "id": "ans_3188921e-d0fd-4b94-8d6b-10048587768a",
+      "attempt_id": "att_cdf5ebc6-722c-4a46-9931-47019d77b884",
+      "question_id": "q_ag_01",
+      "selected_option_id": "q_ag_01_opt_0",
+      "essay_answer": null,
+      "marked_for_review": false,
+      "saved_at": "2026-10-22T02:10:33.621Z"
+    },
+    {
+      "id": "ans_a013a6ca-e96d-4b9a-9a9c-e5db2dabca1f",
+      "attempt_id": "att_cdf5ebc6-722c-4a46-9931-47019d77b884",
+      "question_id": "q_es_01",
+      "selected_option_id": null,
+      "essay_answer": "Rukun Islam ada 5 yaitu syahadat, shalat, zakat, puasa, dan haji.",
+      "marked_for_review": true,
+      "saved_at": "2026-10-22T02:10:33.646Z"
+    },
+    {
+      "id": "ans_543b98a7-02bc-48c1-adeb-8aae34b196f4",
+      "attempt_id": "att_374fd7a8-efef-4d33-9d49-547911a840a4",
+      "question_id": "q_ag_01",
+      "selected_option_id": "q_ag_01_opt_0",
+      "essay_answer": null,
+      "marked_for_review": false,
+      "saved_at": "2026-10-22T02:11:03.868Z"
+    },
+    {
+      "id": "ans_ca697638-6b57-47d4-b347-a145ca64a0a8",
+      "attempt_id": "att_374fd7a8-efef-4d33-9d49-547911a840a4",
+      "question_id": "q_es_01",
+      "selected_option_id": null,
+      "essay_answer": "Rukun Islam ada 5 yaitu syahadat, shalat, zakat, puasa, dan haji.",
+      "marked_for_review": true,
+      "saved_at": "2026-10-22T02:11:03.874Z"
+    },
+    {
+      "id": "ans_7333dfad-0680-4a77-a324-2e420830075c",
+      "attempt_id": "att_2c650f76-4406-4143-a80e-1a34c2dfeb73",
+      "question_id": "q_ag_01",
+      "selected_option_id": "q_ag_01_opt_0",
+      "essay_answer": null,
+      "marked_for_review": false,
+      "saved_at": "2026-10-22T02:11:50.358Z"
+    },
+    {
+      "id": "ans_4f88bfdc-c7eb-477d-9c1f-ceba2d8f73cb",
+      "attempt_id": "att_2c650f76-4406-4143-a80e-1a34c2dfeb73",
+      "question_id": "q_es_01",
+      "selected_option_id": null,
+      "essay_answer": "Rukun Islam ada 5 yaitu syahadat, shalat, zakat, puasa, dan haji.",
+      "marked_for_review": true,
+      "saved_at": "2026-10-22T02:11:50.363Z"
+    }
+  ],
   "essay_grades": [],
-  "exam_results": [],
+  "exam_results": [
+    {
+      "id": "res_707d9fd6-be5b-4338-b7ec-21029f28cf46",
+      "attempt_id": "att_cdf5ebc6-722c-4a46-9931-47019d77b884",
+      "objective_score": 0,
+      "essay_score": 0,
+      "final_score": 0,
+      "selection_status": "tidak_lulus",
+      "is_published": false,
+      "published_by": null,
+      "published_at": null,
+      "created_at": "2026-10-22T02:10:33.660Z"
+    },
+    {
+      "id": "res_4ffbf68d-c87b-4d9e-911e-6122442be88c",
+      "attempt_id": "att_374fd7a8-efef-4d33-9d49-547911a840a4",
+      "objective_score": 0,
+      "essay_score": 0,
+      "final_score": 0,
+      "selection_status": "tidak_lulus",
+      "is_published": false,
+      "published_by": null,
+      "published_at": null,
+      "created_at": "2026-10-22T02:11:03.925Z"
+    },
+    {
+      "id": "res_d3fdba31-dd0f-4d51-a65e-c1e458b2e810",
+      "attempt_id": "att_2c650f76-4406-4143-a80e-1a34c2dfeb73",
+      "objective_score": 0,
+      "essay_score": 0,
+      "final_score": 0,
+      "selection_status": "tidak_lulus",
+      "is_published": false,
+      "published_by": null,
+      "published_at": null,
+      "created_at": "2026-10-22T02:11:50.376Z"
+    }
+  ],
   "announcements": [
     {
       "id": "ann_001",
@@ -714,6 +1155,381 @@
     }
   ],
   "audit_logs": [
+    {
+      "id": "bdcf8e32-dd4d-48bf-b599-ac45227545b4",
+      "actor_id": "u_2522a6f3-7e7e-4c0e-bfcb-0d8c98162c26",
+      "actor_name": "Calon Santri Pilot CBT",
+      "action": "SUBMIT_EXAM",
+      "entity_type": "EXAM_ATTEMPT",
+      "entity_id": "att_2c650f76-4406-4143-a80e-1a34c2dfeb73",
+      "metadata": {
+        "exam_id": "exam_cbt_001",
+        "correct_count": 0,
+        "total_mc": 11,
+        "objective_score": 0
+      },
+      "created_at": "2026-10-22T02:11:50.393Z"
+    },
+    {
+      "id": "ff8bdbdf-5f1f-4c48-9f8f-d9cf42caebde",
+      "actor_id": "u_2522a6f3-7e7e-4c0e-bfcb-0d8c98162c26",
+      "actor_name": "Calon Santri Pilot CBT",
+      "action": "START_EXAM",
+      "entity_type": "EXAM_ATTEMPT",
+      "entity_id": "att_2c650f76-4406-4143-a80e-1a34c2dfeb73",
+      "metadata": {
+        "exam_id": "exam_cbt_001",
+        "reg_number": "PPDB-2027-0008"
+      },
+      "created_at": "2026-10-22T02:11:50.335Z"
+    },
+    {
+      "id": "9fa65962-dae4-460e-8028-916e0d311701",
+      "actor_id": "u_2522a6f3-7e7e-4c0e-bfcb-0d8c98162c26",
+      "actor_name": "Calon Santri Pilot CBT",
+      "action": "REGISTER_STUDENT",
+      "entity_type": "PROFILE",
+      "entity_id": "u_2522a6f3-7e7e-4c0e-bfcb-0d8c98162c26",
+      "metadata": {
+        "email": "cbt_pilot_1792635110328@test.com",
+        "registration_number": "PPDB-2027-0008"
+      },
+      "created_at": "2026-10-22T02:11:50.330Z"
+    },
+    {
+      "id": "f8540c51-0c82-4a9f-8e61-1f699319fa1f",
+      "actor_id": "u_admin_001",
+      "actor_name": "Ustadz Abdullah Faqih, M.Pd.",
+      "action": "UNPUBLISH_RESULTS",
+      "entity_type": "EXAM_RESULTS",
+      "entity_id": null,
+      "metadata": {
+        "count": 2,
+        "published": false
+      },
+      "created_at": "2026-10-22T02:11:50.320Z"
+    },
+    {
+      "id": "98f13131-e1dc-4a13-85b1-f85903d9cd74",
+      "actor_id": "u_da2853cd-807f-46b9-8f98-9c655e82b858",
+      "actor_name": "Santri B (Test Persona)",
+      "action": "UPDATE_STUDENT_PROFILE",
+      "entity_type": "STUDENT_PROFILE",
+      "entity_id": "sp_a5bb5fd9-3248-4425-b0cc-b766d70a1f28",
+      "metadata": {},
+      "created_at": "2026-10-22T02:11:50.283Z"
+    },
+    {
+      "id": "ae0e06b8-a051-48ab-8a48-dca38086c2cd",
+      "actor_id": "u_da2853cd-807f-46b9-8f98-9c655e82b858",
+      "actor_name": "Santri B (Test Persona)",
+      "action": "REGISTER_STUDENT",
+      "entity_type": "PROFILE",
+      "entity_id": "u_da2853cd-807f-46b9-8f98-9c655e82b858",
+      "metadata": {
+        "email": "santri_b_1792635110266@test.com",
+        "registration_number": "PPDB-2027-0007"
+      },
+      "created_at": "2026-10-22T02:11:50.270Z"
+    },
+    {
+      "id": "7889c11f-ba94-4971-815a-3415d99d990a",
+      "actor_id": "u_student_001",
+      "actor_name": "Ahmad Fauzi Al-Ghifari",
+      "action": "LOGIN",
+      "entity_type": "PROFILE",
+      "entity_id": "u_student_001",
+      "metadata": {
+        "role": "student"
+      },
+      "created_at": "2026-10-22T02:11:50.262Z"
+    },
+    {
+      "id": "2143cf91-3212-4e7f-a9f0-4ad0870a8eaf",
+      "actor_id": "u_committee_001",
+      "actor_name": "Ustadzah Nurul Hidayah, S.Pd.I.",
+      "action": "LOGIN",
+      "entity_type": "PROFILE",
+      "entity_id": "u_committee_001",
+      "metadata": {
+        "role": "committee"
+      },
+      "created_at": "2026-10-22T02:11:50.256Z"
+    },
+    {
+      "id": "181468d3-4d97-494c-824a-5a41ed8f4104",
+      "actor_id": "u_admin_001",
+      "actor_name": "Ustadz Abdullah Faqih, M.Pd.",
+      "action": "LOGIN",
+      "entity_type": "PROFILE",
+      "entity_id": "u_admin_001",
+      "metadata": {
+        "role": "admin"
+      },
+      "created_at": "2026-10-22T02:11:50.238Z"
+    },
+    {
+      "id": "1bf744c2-efa3-4863-b980-5adb010ba089",
+      "actor_id": "u_admin_001",
+      "actor_name": "Ustadz Abdullah Faqih, M.Pd.",
+      "action": "LOGIN",
+      "entity_type": "PROFILE",
+      "entity_id": "u_admin_001",
+      "metadata": {
+        "role": "admin"
+      },
+      "created_at": "2026-10-22T02:11:50.181Z"
+    },
+    {
+      "id": "202fe1ab-55d2-41b4-bd43-61d861d000da",
+      "actor_id": "u_900b4b9e-6754-4c78-a5ac-52ae6600b131",
+      "actor_name": "Calon Santri Pilot CBT",
+      "action": "SUBMIT_EXAM",
+      "entity_type": "EXAM_ATTEMPT",
+      "entity_id": "att_374fd7a8-efef-4d33-9d49-547911a840a4",
+      "metadata": {
+        "exam_id": "exam_cbt_001",
+        "correct_count": 0,
+        "total_mc": 11,
+        "objective_score": 0
+      },
+      "created_at": "2026-10-22T02:11:03.930Z"
+    },
+    {
+      "id": "6e74e6f5-1cbd-4b6f-bb43-0fb4de9d9faa",
+      "actor_id": "u_900b4b9e-6754-4c78-a5ac-52ae6600b131",
+      "actor_name": "Calon Santri Pilot CBT",
+      "action": "START_EXAM",
+      "entity_type": "EXAM_ATTEMPT",
+      "entity_id": "att_374fd7a8-efef-4d33-9d49-547911a840a4",
+      "metadata": {
+        "exam_id": "exam_cbt_001",
+        "reg_number": "PPDB-2027-0006"
+      },
+      "created_at": "2026-10-22T02:11:03.828Z"
+    },
+    {
+      "id": "588e5844-6e15-4bd7-ac7f-a3f3cc52359c",
+      "actor_id": "u_900b4b9e-6754-4c78-a5ac-52ae6600b131",
+      "actor_name": "Calon Santri Pilot CBT",
+      "action": "REGISTER_STUDENT",
+      "entity_type": "PROFILE",
+      "entity_id": "u_900b4b9e-6754-4c78-a5ac-52ae6600b131",
+      "metadata": {
+        "email": "cbt_pilot_1792635063819@test.com",
+        "registration_number": "PPDB-2027-0006"
+      },
+      "created_at": "2026-10-22T02:11:03.822Z"
+    },
+    {
+      "id": "eca95e11-1519-43c3-843c-1dbad8acdcdc",
+      "actor_id": "u_admin_001",
+      "actor_name": "Ustadz Abdullah Faqih, M.Pd.",
+      "action": "UNPUBLISH_RESULTS",
+      "entity_type": "EXAM_RESULTS",
+      "entity_id": null,
+      "metadata": {
+        "count": 1,
+        "published": false
+      },
+      "created_at": "2026-10-22T02:11:03.810Z"
+    },
+    {
+      "id": "1b019783-21a8-4d0b-95a7-d0337181f4ac",
+      "actor_id": "u_e5b88f3d-e0ca-4f55-9314-2546c55f6cfd",
+      "actor_name": "Santri B (Test Persona)",
+      "action": "UPDATE_STUDENT_PROFILE",
+      "entity_type": "STUDENT_PROFILE",
+      "entity_id": "sp_86b00f16-dae8-4690-b82d-5fe1372b9b39",
+      "metadata": {},
+      "created_at": "2026-10-22T02:11:03.773Z"
+    },
+    {
+      "id": "201a555c-57c3-414b-b77b-8daa1f25d4b4",
+      "actor_id": "u_e5b88f3d-e0ca-4f55-9314-2546c55f6cfd",
+      "actor_name": "Santri B (Test Persona)",
+      "action": "REGISTER_STUDENT",
+      "entity_type": "PROFILE",
+      "entity_id": "u_e5b88f3d-e0ca-4f55-9314-2546c55f6cfd",
+      "metadata": {
+        "email": "santri_b_1792635063760@test.com",
+        "registration_number": "PPDB-2027-0005"
+      },
+      "created_at": "2026-10-22T02:11:03.762Z"
+    },
+    {
+      "id": "e1c58729-74db-4bb0-9c15-2f93fa6336e0",
+      "actor_id": "u_student_001",
+      "actor_name": "Ahmad Fauzi Al-Ghifari",
+      "action": "LOGIN",
+      "entity_type": "PROFILE",
+      "entity_id": "u_student_001",
+      "metadata": {
+        "role": "student"
+      },
+      "created_at": "2026-10-22T02:11:03.758Z"
+    },
+    {
+      "id": "709d75d9-de13-4ec7-961e-5634d922917e",
+      "actor_id": "u_committee_001",
+      "actor_name": "Ustadzah Nurul Hidayah, S.Pd.I.",
+      "action": "LOGIN",
+      "entity_type": "PROFILE",
+      "entity_id": "u_committee_001",
+      "metadata": {
+        "role": "committee"
+      },
+      "created_at": "2026-10-22T02:11:03.751Z"
+    },
+    {
+      "id": "9a18f424-eddf-423a-9380-73acfcde3e3d",
+      "actor_id": "u_admin_001",
+      "actor_name": "Ustadz Abdullah Faqih, M.Pd.",
+      "action": "LOGIN",
+      "entity_type": "PROFILE",
+      "entity_id": "u_admin_001",
+      "metadata": {
+        "role": "admin"
+      },
+      "created_at": "2026-10-22T02:11:03.733Z"
+    },
+    {
+      "id": "960af0b4-2715-47af-a24e-e8d0149771f5",
+      "actor_id": "u_admin_001",
+      "actor_name": "Ustadz Abdullah Faqih, M.Pd.",
+      "action": "LOGIN",
+      "entity_type": "PROFILE",
+      "entity_id": "u_admin_001",
+      "metadata": {
+        "role": "admin"
+      },
+      "created_at": "2026-10-22T02:11:03.654Z"
+    },
+    {
+      "id": "f78f5375-a517-458f-8a31-3fec316c4905",
+      "actor_id": "u_855ebaf0-5822-4ef8-bd8c-5e125cfa292d",
+      "actor_name": "Calon Santri Pilot CBT",
+      "action": "SUBMIT_EXAM",
+      "entity_type": "EXAM_ATTEMPT",
+      "entity_id": "att_cdf5ebc6-722c-4a46-9931-47019d77b884",
+      "metadata": {
+        "exam_id": "exam_cbt_001",
+        "correct_count": 0,
+        "total_mc": 11,
+        "objective_score": 0
+      },
+      "created_at": "2026-10-22T02:10:33.661Z"
+    },
+    {
+      "id": "10078189-5352-420d-8228-cc635013f5b8",
+      "actor_id": "u_855ebaf0-5822-4ef8-bd8c-5e125cfa292d",
+      "actor_name": "Calon Santri Pilot CBT",
+      "action": "START_EXAM",
+      "entity_type": "EXAM_ATTEMPT",
+      "entity_id": "att_cdf5ebc6-722c-4a46-9931-47019d77b884",
+      "metadata": {
+        "exam_id": "exam_cbt_001",
+        "reg_number": "PPDB-2027-0004"
+      },
+      "created_at": "2026-10-22T02:10:33.609Z"
+    },
+    {
+      "id": "d607932d-ee97-4457-afe4-32e97cf6c42a",
+      "actor_id": "u_855ebaf0-5822-4ef8-bd8c-5e125cfa292d",
+      "actor_name": "Calon Santri Pilot CBT",
+      "action": "REGISTER_STUDENT",
+      "entity_type": "PROFILE",
+      "entity_id": "u_855ebaf0-5822-4ef8-bd8c-5e125cfa292d",
+      "metadata": {
+        "email": "cbt_pilot_1792635033602@test.com",
+        "registration_number": "PPDB-2027-0004"
+      },
+      "created_at": "2026-10-22T02:10:33.604Z"
+    },
+    {
+      "id": "b57bd512-63e6-43f9-a698-ae1874df7c78",
+      "actor_id": "u_admin_001",
+      "actor_name": "Ustadz Abdullah Faqih, M.Pd.",
+      "action": "UNPUBLISH_RESULTS",
+      "entity_type": "EXAM_RESULTS",
+      "entity_id": null,
+      "metadata": {
+        "count": 0,
+        "published": false
+      },
+      "created_at": "2026-10-22T02:10:33.593Z"
+    },
+    {
+      "id": "625944a4-f04d-4da6-9746-820252088185",
+      "actor_id": "u_664eae01-e5b0-4898-a19f-cd01860a234a",
+      "actor_name": "Santri B (Test Persona)",
+      "action": "UPDATE_STUDENT_PROFILE",
+      "entity_type": "STUDENT_PROFILE",
+      "entity_id": "sp_5c75e79b-3389-4f4e-8592-4e73b7a1b53d",
+      "metadata": {},
+      "created_at": "2026-10-22T02:10:33.548Z"
+    },
+    {
+      "id": "0fd58da8-0b56-4080-bc3b-64bc7218ad57",
+      "actor_id": "u_664eae01-e5b0-4898-a19f-cd01860a234a",
+      "actor_name": "Santri B (Test Persona)",
+      "action": "REGISTER_STUDENT",
+      "entity_type": "PROFILE",
+      "entity_id": "u_664eae01-e5b0-4898-a19f-cd01860a234a",
+      "metadata": {
+        "email": "santri_b_1792635033532@test.com",
+        "registration_number": "PPDB-2027-0003"
+      },
+      "created_at": "2026-10-22T02:10:33.535Z"
+    },
+    {
+      "id": "732ebdae-648d-4193-be07-52254e57e727",
+      "actor_id": "u_student_001",
+      "actor_name": "Ahmad Fauzi Al-Ghifari",
+      "action": "LOGIN",
+      "entity_type": "PROFILE",
+      "entity_id": "u_student_001",
+      "metadata": {
+        "role": "student"
+      },
+      "created_at": "2026-10-22T02:10:33.528Z"
+    },
+    {
+      "id": "27d5504b-e884-4558-a5c1-0eb91613cab9",
+      "actor_id": "u_committee_001",
+      "actor_name": "Ustadzah Nurul Hidayah, S.Pd.I.",
+      "action": "LOGIN",
+      "entity_type": "PROFILE",
+      "entity_id": "u_committee_001",
+      "metadata": {
+        "role": "committee"
+      },
+      "created_at": "2026-10-22T02:10:33.512Z"
+    },
+    {
+      "id": "3e5ff8a8-4dbe-4bfe-8a8f-94577d15827c",
+      "actor_id": "u_admin_001",
+      "actor_name": "Ustadz Abdullah Faqih, M.Pd.",
+      "action": "LOGIN",
+      "entity_type": "PROFILE",
+      "entity_id": "u_admin_001",
+      "metadata": {
+        "role": "admin"
+      },
+      "created_at": "2026-10-22T02:10:33.481Z"
+    },
+    {
+      "id": "acdb2c6c-f7c3-4a5a-b4fd-39898ecdfc9b",
+      "actor_id": "u_admin_001",
+      "actor_name": "Ustadz Abdullah Faqih, M.Pd.",
+      "action": "LOGIN",
+      "entity_type": "PROFILE",
+      "entity_id": "u_admin_001",
+      "metadata": {
+        "role": "admin"
+      },
+      "created_at": "2026-10-22T02:10:33.383Z"
+    },
     {
       "id": "c3e596df-f62b-4636-bbe7-f8d5d31760f0",
       "actor_id": "u_admin_001",
