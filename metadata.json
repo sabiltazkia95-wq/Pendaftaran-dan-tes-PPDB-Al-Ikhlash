@@ -1,0 +1,6 @@
+{
+  "name": "PPDB Online Pondok Pesantren Al-Ikhlash",
+  "description": "Sistem Informasi Penerimaan Santri Baru (PPDB) Online Pondok Pesantren Al-Ikhlash Tahun Ajaran 2027/2028 dengan formulir pendaftaran bertahap, verifikasi berkas, kartu ujian digital, Computer Based Test (CBT) terintegrasi, dan penilaian seleksi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
